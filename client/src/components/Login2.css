@@ -1,0 +1,24 @@
+@media all and (min-width: 480px) {
+    .Login {
+        padding: 60px 0;
+    }
+    .Login form {
+        margin: 0 auto;
+        max-width: 320px;
+    }
+    
+}
+
+.myformstyle3{
+    border-style: solid;
+    
+    border-color: #000965;
+    
+    border-width: 5px;
+    
+    box-shadow: 0 8px 350px 0 rgba(0, 0, 0, 0.5);
+    
+    align-content: center;
+    
+    margin-right: 0px;
+    }

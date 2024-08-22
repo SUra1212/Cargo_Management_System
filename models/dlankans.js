@@ -1,0 +1,75 @@
+const mongoose = require('mongoose');
+
+const dlankaSchema = new mongoose.Schema({
+    Sname:{
+        type:String,
+        required:true
+    },
+    pno:{
+        type:String,
+        required:true
+    },
+    Rname:{
+        type:String,
+        required:true
+    },
+    RNIC:{
+        type:String,
+        required:true
+    },
+    Radd:{
+        type:String,
+        required:true
+    },
+    city:{
+        type:String,
+        required:true
+    },
+    district:{
+        type:String,
+        required:true
+    },
+    province:{
+        type:String,
+        required:true
+    },
+    sno:{
+        type:String,
+        required:true
+    },
+    grossW:{
+        type:String,
+        required:true
+    },
+    totalItems:{
+        type:String,
+        required:true
+    },
+    tax:{
+        type:String,
+        required:true
+    },
+    custom:{
+        type:String,
+        required:true
+    },
+    delivery:{
+        type:String,
+        required:true
+    },
+    fullPay:{
+        type:String,
+        required:true
+    },
+    status:{
+        type:String,
+        required:true
+    },
+    ddate:{
+        type:String,
+        required:true
+    }
+    
+});
+
+module.exports = mongoose.model('Dispatch',dlankaSchema)

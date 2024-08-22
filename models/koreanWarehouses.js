@@ -1,0 +1,83 @@
+const mongoose = require('mongoose');
+const koreanWarehouseSchema = new mongoose.Schema({
+    
+    serialNumber:{
+        type:String,
+        required:true
+    },
+    receiverName:{
+        type:String,
+        required:true
+    },
+    receiverContact:{
+        type:String,
+        required:true
+    },
+    receiverEmail:{
+        type:String,
+        required:true
+    },
+    receiverAddress:{
+        type:String,
+        required:true
+    },
+    receiverProvince:{
+        type:String,
+        required:true
+    },
+    receiverDistrict:{
+        type:String,
+        required:true
+    },
+    receiverCity:{
+        type:String,
+        required:true
+    },
+    senderName:{
+        type:String,
+        required:true
+    },
+    senderContact:{
+        type:String,
+        required:true
+    },
+    senderEmail:{
+        type:String,
+        required:true
+    },
+    senderAddress:{
+        type:String,
+        required:true
+    },
+    senderProvince:{
+        type:String,
+        required:true
+    },
+    senderDistrict:{
+        type:String,
+        required:true
+    },
+    senderCity:{
+        type:String,
+        required:true
+    },
+    pNo:{
+        type:String,
+        required:true
+    },
+    pType:{
+        type:String,
+        required:true
+    },
+    pWeight:{
+        type:String,
+        required:true
+    },
+    pShippingCost:{
+        type:String,
+        required:true
+    }
+
+})
+
+module.exports = mongoose.model('CargoDetail',koreanWarehouseSchema);
